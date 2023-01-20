@@ -1,0 +1,25 @@
+---
+import LogoIcon from "../icons/LogoIcon.astro";
+import LightDarkButton from "../components/LightDarkButton.astro";
+---
+
+<div class="absolute top-0 w-full">
+  <div class="flex items-center justify-between">
+    <div class="w-12 m-3 dark:text-orange-200 dark:opacity-80">
+      <a
+        aria-label="Arian Ahmadinejad Logo"
+        href="./"
+        class="text-[#592406] dark:text-orange-200 dark:opacity-80"
+        ><LogoIcon />
+      </a>
+    </div>
+    <div class="tabs tabs-boxed bg-[#FDF1E1]">
+      <a class="tab">Home</a>
+      <a class="tab tab-active">Projects</a>
+      <a class="tab">About</a>
+    </div>
+    <div class="w-12 m-3">
+      <LightDarkButton alt="Dark/Light mode" />
+    </div>
+  </div>
+</div>
